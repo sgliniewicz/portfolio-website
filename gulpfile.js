@@ -14,8 +14,10 @@ var
   }
 ;
 
+gulp.task('default', ['watch', 'sass']);
+
 //Watch Task
-gulp.task('watch',[ 'browserSync', 'sass' ], function(){
+gulp.task('watch',[ 'browserSync'], function(){
   gulp.watch(folder.src + 'scss/**/*.scss', ['sass']);
   gulp.watch(folder.src + '*.html', browserSync.reload); 
   gulp.watch(folder.src + 'js/**/*.js', browserSync.reload); 
