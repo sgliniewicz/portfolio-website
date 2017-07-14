@@ -2,7 +2,7 @@
 $(function() {
     console.log( "ready!" );
 
-    $('#scale-demo').click(function(){
+    $('.btn-floating').click(function(){
         $(this).addClass('scale-out')
     });
 });
