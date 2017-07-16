@@ -18,10 +18,48 @@ nav {
     height: 50px;
 }
 
-.glow {
+.custom-nav {
+
+    & li.menu-btn-wrapper {
+        padding-bottom: 20px 
+    }
+
+    & li.menu-item {
+        padding: 5px 0;
+    }
+}
+
+
+
+.section {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & .title-box {
+        width: 50%;
+        height: 50%
+    }
+}
+
+
+//Shadows
+.close-and-heavy {
     text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
                 0px 8px 13px rgba(0,0,0,0.1),
                 0px 18px 23px rgba(0,0,0,0.1);
 }
 
+.down-and-distant{
+    text-shadow: 0px 3px 0px #b2a98f,
+                 0px 14px 10px rgba(0,0,0,0.15),
+                 0px 24px 2px rgba(0,0,0,0.1),
+                 0px 34px 30px rgba(0,0,0,0.1);
+}
 
+.multiple-light-source {
+    text-shadow: 0px 15px 5px rgba(0,0,0,0.1),
+                    10px 20px 5px rgba(0,0,0,0.05),
+                    -10px 20px 5px rgba(0,0,0,0.05);
+}
