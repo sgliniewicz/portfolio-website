@@ -7,11 +7,13 @@ $(function() {
     var $window = $(window)
     var menuBtn = $('.menu-btn');
     var menuItems = $('.menu-item');
+    var mediaItems = $('.social-media-item')
 
     $window.scroll(function () {
 
         var iCurScrollPos = $(this).scrollTop();
-        menuItems.toggleClass('scale-in', iCurScrollPos < iScrollPos)
+        menuItems.toggleClass('scale-in', iCurScrollPos < iScrollPos);
+        mediaItems.toggleClass("scale-in", iCurScrollPos < iScrollPos);
         
         if (iCurScrollPos  > iScrollPos) {
             //down
@@ -54,7 +56,6 @@ $(function() {
     }
     
     function openMenuWithDelay(){
-
         var delay = setInterval( function(){
             console.log("index: " + menuIndex)
             if ( menuIndex <  menuItems.length ){
@@ -68,7 +69,14 @@ $(function() {
         menuBtn.removeClass("menu-closed");
         menuBtn.addClass("menu-open");
     }
+
+    function showSocialMediaWithDelay(){
+        setTimeout(function(){
+            mediaItems.addClass("scale-in");
+        }, 500);
+    }
     
     openMenuWithDelay();
+    showSocialMediaWithDelay();
     
 });
