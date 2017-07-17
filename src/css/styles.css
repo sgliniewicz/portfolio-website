@@ -26,8 +26,11 @@ nav {
   align-items: center;
   justify-content: center; }
   .section .title-box {
-    width: 50%;
-    height: 50%; }
+    width: 50%; }
+
+.social-media {
+  position: fixed;
+  bottom: 0; }
 
 .close-and-heavy {
   text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1); }

@@ -39,10 +39,14 @@ nav {
 
     & .title-box {
         width: 50%;
-        height: 50%
+        
     }
 }
 
+.social-media {
+    position: fixed;
+    bottom: 0;
+}
 
 //Shadows
 .close-and-heavy {
