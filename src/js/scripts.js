@@ -2,30 +2,34 @@
 $(function() {
     console.log( "ready!" );
 
+    var delay;
+
     var menuIndex = 0
     var iScrollPos = 0;
     var $window = $(window)
     var menuBtn = $('.menu-btn');
     var menuItems = $('.menu-item');
     var mediaItems = $('.social-media-item')
-
+    
     $window.scroll(function () {
 
         var iCurScrollPos = $(this).scrollTop();
-        menuItems.toggleClass('scale-in', iCurScrollPos < iScrollPos);
-        mediaItems.toggleClass("scale-in", iCurScrollPos < iScrollPos);
+        //menuItems.toggleClass('scale-in', iCurScrollPos < iScrollPos);
+        //mediaItems.toggleClass("scale-in", iCurScrollPos < iScrollPos);
         
         if (iCurScrollPos  > iScrollPos) {
             //down
             menuBtn.removeClass("menu-open");
             menuBtn.addClass("menu-closed");
-            menuIndex = -1;
+            closeMenuWithDelay();
+            //menuIndex = -1;
 
         } else {
             //up
             menuBtn.removeClass("menu-closed");
             menuBtn.addClass("menu-open");
-            menuIndex = 4;
+            openMenuWithDelay();
+            //menuIndex = 4;
         }
         iScrollPos = iCurScrollPos;
         
@@ -41,7 +45,9 @@ $(function() {
 
     function closeMenuWithDelay(){ 
 
-        var delay = setInterval( function(){
+        clearInterval( delay )
+
+        delay = setInterval( function(){
             console.log("index: " + menuIndex)
             if ( menuIndex >= 0 ){
                 $( menuItems[ menuIndex ] ).removeClass( 'scale-in' );
@@ -56,7 +62,10 @@ $(function() {
     }
     
     function openMenuWithDelay(){
-        var delay = setInterval( function(){
+
+        clearInterval( delay )
+
+        delay = setInterval( function(){
             console.log("index: " + menuIndex)
             if ( menuIndex <  menuItems.length ){
                 $( menuItems[ menuIndex ] ).addClass( 'scale-in' );
@@ -64,7 +73,7 @@ $(function() {
             } else{
                 clearInterval( delay );
             }
-        }, 100);
+        }, 150);
 
         menuBtn.removeClass("menu-closed");
         menuBtn.addClass("menu-open");
@@ -75,8 +84,23 @@ $(function() {
             mediaItems.addClass("scale-in");
         }, 500);
     }
-    
-    openMenuWithDelay();
-    showSocialMediaWithDelay();
+
+    function landingPageFlow() {
+        //title animation
+        setTimeout( function(){
+            $('#Title').addClass('fadeInDown')
+            $('#subTitle').addClass('fadeInDown')
+        }, 100)
+
+        //menuopen
+        setTimeout(openMenuWithDelay, 1000)
+
+        //chevron
+        setTimeout( function(){
+            $('#scroll-down-icon').addClass('scale-in')
+        }, 2500)
+    }
+
+    landingPageFlow();
     
 });
