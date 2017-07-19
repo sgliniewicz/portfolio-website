@@ -11,8 +11,10 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 10px 0 0;
-  height: 50px; }
+  z-index: 9999; }
+
+.row .social-media-item {
+  margin-top: 50px; }
 
 .custom-nav li.menu-btn-wrapper {
   padding-bottom: 20px; }

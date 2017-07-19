@@ -14,5 +14,8 @@
     "gulp-sass": "^3.1.0",
     "jquery": "^3.2.1",
     "materialize-css": "^0.99.0"
+  },
+  "dependencies": {
+    "vue": "^2.4.1"
   }
 }

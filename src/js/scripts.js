@@ -3,13 +3,15 @@ $(function() {
     console.log( "ready!" );
 
     var delay;
+    var flag;
 
     var menuIndex = 0
     var iScrollPos = 0;
     var $window = $(window)
+    var nav = $('.custom-nav');
     var menuBtn = $('.menu-btn');
     var menuItems = $('.menu-item');
-    var mediaItems = $('.social-media-item')
+    var mediaItems = $('.social-media-item');
     
     $window.scroll(function () {
 
@@ -19,16 +21,16 @@ $(function() {
         
         if (iCurScrollPos  > iScrollPos) {
             //down
-            menuBtn.removeClass("menu-open");
-            menuBtn.addClass("menu-closed");
             closeMenuWithDelay();
+            nav.removeClass("menu-open");
+            nav.addClass("menu-closed");
             //menuIndex = -1;
 
         } else {
             //up
-            menuBtn.removeClass("menu-closed");
-            menuBtn.addClass("menu-open");
             openMenuWithDelay();
+            nav.removeClass("menu-closed");
+            nav.addClass("menu-open"); 
             //menuIndex = 4;
         }
         iScrollPos = iCurScrollPos;
@@ -45,38 +47,34 @@ $(function() {
 
     function closeMenuWithDelay(){ 
 
-        clearInterval( delay )
-
-        delay = setInterval( function(){
-            console.log("index: " + menuIndex)
-            if ( menuIndex >= 0 ){
-                $( menuItems[ menuIndex ] ).removeClass( 'scale-in' );
-                menuIndex -= 1;
-            } else{
-                clearInterval( delay );
-            }
-        }, 100 );   
+        //clearInterval( delay )
+        if (nav.hasClass('menu-open')){
+            var delay = setInterval( function(){
+                console.log("index: " + menuIndex)
+                if ( menuIndex >= 0 ){
+                    $( menuItems[ menuIndex ] ).removeClass( 'scale-in' );
+                    menuIndex -= 1;
+                } else{
+                    clearInterval( delay );
+                }
+            }, 100 );
+        }   
         
-        menuBtn.removeClass("menu-open");
-        menuBtn.addClass("menu-closed");
     }
     
     function openMenuWithDelay(){
-
-        clearInterval( delay )
-
-        delay = setInterval( function(){
-            console.log("index: " + menuIndex)
-            if ( menuIndex <  menuItems.length ){
-                $( menuItems[ menuIndex ] ).addClass( 'scale-in' );
-                menuIndex += 1;
-            } else{
-                clearInterval( delay );
-            }
-        }, 150);
-
-        menuBtn.removeClass("menu-closed");
-        menuBtn.addClass("menu-open");
+        //clearInterval( delay )
+        if (nav.hasClass('menu-closed')){
+            var delay = setInterval( function(){
+                console.log("index: " + menuIndex)
+                if ( menuIndex <  menuItems.length ){
+                    $( menuItems[ menuIndex ] ).addClass( 'scale-in' );
+                    menuIndex += 1;
+                } else{
+                    clearInterval( delay );
+                }
+            }, 150);
+        }
     }
 
     function showSocialMediaWithDelay(){
@@ -87,10 +85,13 @@ $(function() {
 
     function landingPageFlow() {
         //title animation
-        setTimeout( function(){
-            $('#Title').addClass('fadeInDown')
-            $('#subTitle').addClass('fadeInDown')
-        }, 100)
+        $('#Title').addClass('fadeInDown')
+        $('#subTitle').addClass('fadeInDown')
+        
+
+        setTimeout(function(){
+            mediaItems.addClass("scale-in");
+        }, 750);
 
         //menuopen
         setTimeout(openMenuWithDelay, 1000)
