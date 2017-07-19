@@ -58,10 +58,42 @@ img.circle-scale {
     }
 }
 
+.auto-img-resize{
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
 .social-media {
     position: fixed;
     bottom: 0;
 }
+
+.sweep-right{
+  display:inline-block;
+  position:relative;
+  width: 100%;
+  cursor:pointer;
+  background:none;
+  z-index:0;
+}
+
+.card {
+    cursor:pointer;
+}
+
+.sweep-right:before {
+  content: "";
+  position: absolute;
+  z-index:-1;
+  top: 0;  left: 0;  right: 0;  bottom: 0;
+  background: darkgrey;
+  opacity: .7;
+  transform: scaleX(0); 
+  transform-origin: 0 50%;
+  transition: transform .3s ease-out;
+}
+.card:hover  .sweep-right:before{transform: scaleX(1);}
 
 //Shadows
 .close-and-heavy {

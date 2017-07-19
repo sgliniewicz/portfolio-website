@@ -22,16 +22,9 @@ $(function() {
         if (iCurScrollPos  > iScrollPos) {
             //down
             closeMenuWithDelay();
-            nav.removeClass("menu-open");
-            nav.addClass("menu-closed");
-            //menuIndex = -1;
-
         } else {
             //up
             openMenuWithDelay();
-            nav.removeClass("menu-closed");
-            nav.addClass("menu-open"); 
-            //menuIndex = 4;
         }
         iScrollPos = iCurScrollPos;
         
@@ -49,6 +42,8 @@ $(function() {
 
         //clearInterval( delay )
         if (nav.hasClass('menu-open')){
+            nav.removeClass("menu-open");
+            nav.addClass("menu-closed");
             var delay = setInterval( function(){
                 console.log("index: " + menuIndex)
                 if ( menuIndex >= 0 ){
@@ -58,13 +53,17 @@ $(function() {
                     clearInterval( delay );
                 }
             }, 100 );
+
         }   
+        
         
     }
     
     function openMenuWithDelay(){
         //clearInterval( delay )
         if (nav.hasClass('menu-closed')){
+            nav.removeClass("menu-closed")
+            nav.addClass("menu-open")
             var delay = setInterval( function(){
                 console.log("index: " + menuIndex)
                 if ( menuIndex <  menuItems.length ){
@@ -72,9 +71,11 @@ $(function() {
                     menuIndex += 1;
                 } else{
                     clearInterval( delay );
+
                 }
             }, 150);
         }
+
     }
 
     function showSocialMediaWithDelay(){
@@ -95,6 +96,7 @@ $(function() {
 
         //menuopen
         setTimeout(openMenuWithDelay, 1000)
+
 
         //chevron
         setTimeout( function(){
