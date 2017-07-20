@@ -109,5 +109,6 @@ $(function() {
     }
 
     landingPageFlow();
+    $(".button-collapse").sideNav();
     
 });

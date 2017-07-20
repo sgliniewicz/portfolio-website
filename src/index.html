@@ -18,16 +18,39 @@
 <body>
 
 
-  <!-- Fixed Nav Bar -->
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper grey darken-4">
+        <!--
+        <a href="#!user" class="btn-floating btn-large z-depth-3 menu-btn brand-logo">
+            <img class="circle circle-scale" src="images/steven.jpg">
+          </a>
+          -->
+        <a href="#!" class="brand-logo">LOGO</a>
+        <a href="#" data-activates="mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">         
+          <li><a href="">About</a></li>
+          <li><a href="">Projects</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile">
+          <li><a href="">About</a></li>
+          <li><a href="">Projects</a></li>
+          <li><a href="">Contact</a></li>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Fixed Nav Bar
   <nav>
     <ul class="custom-nav menu-closed">
-      <!--
+      
       <li class="menu-btn-wrapper">
           <a href="#!user" class="btn-floating btn-large z-depth-3 menu-btn">
             <img class="circle circle-scale" src="images/steven.jpg">
           </a>
       </li>
-        -->
+
       <li>
         <a href="#!" class="btn-floating btn-large menu-item tooltipped z-depth-3 grey darken-4 scale-transition scale-out" data-position="bottom" data-delay="50" data-tooltip="Home">
           <i class="material-icons">home</i>
@@ -50,7 +73,7 @@
       </li>
     </ul> 
   </nav>
-
+  -->
   <!-- Header -->
   <section class="section full-height z-depth-3">
     <div class="container center-align vertical-align">
@@ -68,7 +91,7 @@
     </div>
   </section>
    
-
+  <!-- About Me -->
   <section class="section z-depth-3">
     <div class="container">
         <div class="row">
@@ -87,7 +110,7 @@
     <div class="container">
         <div class="row">
 
-          <div class="col s12 m4">
+          <div class="col s12 m12 l4">
             <div class="card">
               <div class="card-image">
                 <img src="images/steven(2).jpg">
@@ -96,7 +119,7 @@
             </div>
           </div>
           
-          <div class="col s12 m4">
+          <div class="col s12 m12 l4">
             <div class="card">
               <div class="card-image">
                 <img src="images/steven(2).jpg">
@@ -105,7 +128,7 @@
             </div>
           </div>
 
-          <div class="col s12 m4">
+          <div class="col s12 m12 l4">
             <div class="card">
               <div class="card-image">
                 <img src="images/steven(2).jpg">
@@ -114,6 +137,37 @@
             </div>
           </div>
       </div>
+    </div>
+  </section>
+
+   <section class="section z-depth-3">
+    <div class="container">
+      <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="first_name" type="text" class="validate">
+          <label for="first_name">First Name</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="last_name" type="text" class="validate">
+          <label for="last_name">Last Name</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate">
+          <label for="email">Email</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <textarea id="textarea1" class="materialize-textarea"></textarea>
+          <label for="textarea1">Message</label>
+        </div>
+      </div>
+    </form>
+  </div>
     </div>
   </section>
 
@@ -143,22 +197,6 @@
       </div>
     </div>
   </footer>
-
-  <!--
-  <section class="section z-depth-3">
-    <div class="center-align">
-      <h1 class="down-and-distant">[Projects Section]</h1>
-      <h5 class="close-and-heavy">[Small Text Here]</h5>
-    </div>
-  </section>
-  
-  <section class="section z-depth-3">
-    <div class="center-align">
-      <h1 class="down-and-distant">[Contact Section]</h1>
-      <h5 class="close-and-heavy">[Small Text Here]</h5>
-    </div>
-  </section>
-  -->
 
   <!-- JAVASCRIPT -->
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
