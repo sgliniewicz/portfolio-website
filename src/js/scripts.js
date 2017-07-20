@@ -22,9 +22,13 @@ $(function() {
         if (iCurScrollPos  > iScrollPos) {
             //down
             closeMenuWithDelay();
+            nav.removeClass("menu-open");
+            nav.addClass("menu-closed");
         } else {
             //up
             openMenuWithDelay();
+            nav.removeClass("menu-closed")
+            nav.addClass("menu-open")
         }
         iScrollPos = iCurScrollPos;
         
@@ -42,8 +46,6 @@ $(function() {
 
         //clearInterval( delay )
         if (nav.hasClass('menu-open')){
-            nav.removeClass("menu-open");
-            nav.addClass("menu-closed");
             var delay = setInterval( function(){
                 console.log("index: " + menuIndex)
                 if ( menuIndex >= 0 ){
@@ -62,8 +64,6 @@ $(function() {
     function openMenuWithDelay(){
         //clearInterval( delay )
         if (nav.hasClass('menu-closed')){
-            nav.removeClass("menu-closed")
-            nav.addClass("menu-open")
             var delay = setInterval( function(){
                 console.log("index: " + menuIndex)
                 if ( menuIndex <  menuItems.length ){
@@ -97,6 +97,10 @@ $(function() {
         //menuopen
         setTimeout(openMenuWithDelay, 1000)
 
+        setTimeout(function(){
+            nav.removeClass("menu-closed")
+            nav.addClass("menu-open") 
+        },1100)
 
         //chevron
         setTimeout( function(){
