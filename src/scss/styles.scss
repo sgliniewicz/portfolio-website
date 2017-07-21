@@ -32,18 +32,37 @@ nav {
     box-shadow: none;
     background: none;
     position: fixed;
-    
     z-index: 9999;
 
     & li {
         padding-top: 5px;
         padding-bottom: 20px;
-        padding-left: 5px;
-        
+        padding-left: 5px;   
+    }
+
+    & li.menu .close{
+         position: absolute;
     }
 
 
 }
+
+.parallax-container {
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    & .quote {
+        color: white;
+    }
+
+    & .quote h5 {
+        float: right;
+    }
+
+}
+        
 
 img.circle-scale {
     width: 56px;
@@ -54,6 +73,7 @@ img.circle-scale {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url("../images/white-background.jpg");
     padding: 5rem 0;
 
     & .title-box {
