@@ -3,8 +3,7 @@ $(function() {
     console.log( "ready!" );
 
     var delay;
-    var flag;
-
+    var scrolling = false;
     var menuIndex = 0
     var iScrollPos = 0;
     var $window = $(window)
@@ -14,22 +13,29 @@ $(function() {
     var mediaItems = $('.social-media-item');
     
     $window.scroll(function () {
-
         var iCurScrollPos = $(this).scrollTop();
-        //menuItems.toggleClass('scale-in', iCurScrollPos < iScrollPos);
-        //mediaItems.toggleClass("scale-in", iCurScrollPos < iScrollPos);
         
-        if (iCurScrollPos  > iScrollPos) {
-            //down
-            closeMenuWithDelay();
-            nav.removeClass("menu-open");
-            nav.addClass("menu-closed");
-        } else {
-            //up
-            openMenuWithDelay();
-            nav.removeClass("menu-closed")
-            nav.addClass("menu-open")
+        if (scrolling == false){
+            scrolling = true;
+            if (iCurScrollPos  > iScrollPos) {
+                //down
+                closeMenuWithDelay();
+                nav.removeClass("menu-open");
+                nav.addClass("menu-closed");               
+            } else {
+                //up
+                openMenuWithDelay();
+                nav.removeClass("menu-closed")
+                nav.addClass("menu-open")             
+            }
+
+            var delay =setInterval( function(){
+                console.log("TIMEOUT")
+                scrolling = false;
+                clearInterval( delay );
+            }, 600)         
         }
+        
         iScrollPos = iCurScrollPos;
         
     });
@@ -55,7 +61,6 @@ $(function() {
                     clearInterval( delay );
                 }
             }, 100 );
-
         }   
         
         
@@ -71,9 +76,8 @@ $(function() {
                     menuIndex += 1;
                 } else{
                     clearInterval( delay );
-
                 }
-            }, 150);
+            }, 100);
         }
 
     }

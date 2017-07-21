@@ -18,62 +18,31 @@
 <body>
 
 
-  <div class="navbar-fixed">
-    <nav>
-      <div class="nav-wrapper grey darken-4">
-        <!--
-        <a href="#!user" class="btn-floating btn-large z-depth-3 menu-btn brand-logo">
-            <img class="circle circle-scale" src="images/steven.jpg">
-          </a>
-          -->
-        <a href="#!" class="brand-logo">LOGO</a>
-        <a href="#" data-activates="mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-        <ul class="right hide-on-med-and-down">         
-          <li><a href="">About</a></li>
-          <li><a href="">Projects</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
-        <ul class="side-nav" id="mobile">
-          <li><a href="">About</a></li>
-          <li><a href="">Projects</a></li>
-          <li><a href="">Contact</a></li>
-      </div>
-    </nav>
-  </div>
-
-  <!-- Fixed Nav Bar
-  <nav>
+  <!-- Fixed Nav Bar -->
     <ul class="custom-nav menu-closed">
-      
-      <li class="menu-btn-wrapper">
-          <a href="#!user" class="btn-floating btn-large z-depth-3 menu-btn">
-            <img class="circle circle-scale" src="images/steven.jpg">
-          </a>
-      </li>
-
       <li>
-        <a href="#!" class="btn-floating btn-large menu-item tooltipped z-depth-3 grey darken-4 scale-transition scale-out" data-position="bottom" data-delay="50" data-tooltip="Home">
+        <a href="#!" class="btn-floating btn-large menu-item tooltipped z-depth-3 grey darken-4 scale-transition scale-out" data-position="right" data-delay="50" data-tooltip="Home">
           <i class="material-icons">home</i>
         </a>
       </li>
       <li>
-        <a href="#!" class="btn-floating btn-large menu-item tooltipped z-depth-3 grey darken-4 scale-transition scale-out" data-position="bottom" data-delay="50" data-tooltip="About Me">
+        <a href="#!" class="btn-floating btn-large menu-item tooltipped z-depth-3 grey darken-4 scale-transition scale-out" data-position="right" data-delay="50" data-tooltip="About Me">
           <i class="material-icons">account_circle</i>
         </a>
       </li>
       <li>
-        <a href="#!" class="btn-floating btn-large menu-item tooltipped z-depth-3 grey darken-4 scale-transition scale-out"data-position="bottom" data-delay="50" data-tooltip="Portfolio">
+        <a href="#!" class="btn-floating btn-large menu-item tooltipped z-depth-3 grey darken-4 scale-transition scale-out"data-position="right" data-delay="50" data-tooltip="Portfolio">
           <i class="material-icons">work</i>
         </a>
       </li>
       <li>
-        <a href="#!" class="btn-floating btn-large menu-item tooltipped z-depth-3 grey darken-4 scale-transition scale-out" data-position="bottom" data-delay="50" data-tooltip="Contact">
+        <a href="#!" class="btn-floating btn-large menu-item tooltipped z-depth-3 grey darken-4 scale-transition scale-out" data-position="right" data-delay="50" data-tooltip="Contact">
           <i class="material-icons">phone</i>
         </a>
       </li>
     </ul> 
-  </nav>
-  -->
+  
+
   <!-- Header -->
   <section class="section full-height z-depth-3">
     <div class="container center-align vertical-align">
@@ -100,6 +69,11 @@
           </div>
           <div class="col s12 m12 l6 z-depth-3">
             <h1>About Me</h1>
+            <p class="flow-text">
+            Hi! My name is Steven and I am a 23 year-old self taught Web Developer/Designer based
+            in Chicago, IL. I started to pick-up on web development my senior year of College and the rest is
+            history. My goal is to create websites that are simplistic yet stunning.
+            </p>
           </div>
         </div>
     </div>
@@ -143,31 +117,44 @@
    <section class="section z-depth-3">
     <div class="container">
       <div class="row">
-    <form class="col s12">
-      <div class="row">
-        <div class="input-field col s6">
-          <input id="first_name" type="text" class="validate">
-          <label for="first_name">First Name</label>
+        <div class="col s12 m4 l4">
+          <h5>Let's Get In Touch!</h5>
+          <p class="flow-text">
+            I am currently seeking new projects to take on. Need a website for your
+            business? Are you an artist seeking an original site to show off your work?
+            Send me an email and lets gets get started on your masterpiece!
+          </p>
         </div>
-        <div class="input-field col s6">
-          <input id="last_name" type="text" class="validate">
-          <label for="last_name">Last Name</label>
-        </div>
+        <form class="col s12 m8 l8">
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="first_name" type="text" class="validate">
+              <label for="first_name">Name</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s6">
+              <input id="subject" type="text" class="validate">
+              <label for="email">Subject</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="email" type="email" class="validate">
+              <label for="email">Email</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <textarea id="textarea1" class="materialize-textarea"></textarea>
+              <label for="textarea1">Message</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12 center ">
+              <a class="btn-floating btn-large waves-effect waves-light grey darken-4"><i class="material-icons">send</i></a>
+            </div>
+          </div>
+        </form>
       </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input id="email" type="email" class="validate">
-          <label for="email">Email</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <textarea id="textarea1" class="materialize-textarea"></textarea>
-          <label for="textarea1">Message</label>
-        </div>
-      </div>
-    </form>
-  </div>
     </div>
   </section>
 
