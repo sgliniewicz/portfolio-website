@@ -15,10 +15,20 @@ $(function() {
     var mediaItems = $('.social-media-item');
     
 
-    /*
+    
     $window.scroll(function () {
         var iCurScrollPos = $(this).scrollTop();
         
+        //close menu
+        if(nav.hasClass('menu-open')){
+            closeMenuWithDelay();
+            nav.removeClass("menu-open");
+            nav.addClass("menu-closed");
+            closeBtn.removeClass('scale-in');
+            openBtn.addClass('scale-in');
+        }
+
+        /*
         if (scrolling == false){
             scrolling = true;
             if (iCurScrollPos  > iScrollPos) {
@@ -39,11 +49,12 @@ $(function() {
                 clearInterval( delay );
             }, 600)         
         }
+        */
 
         iScrollPos = iCurScrollPos;
         
     });
-    */
+    
 
     menuBtn.click(function(){
         if (nav.hasClass('menu-closed')){
