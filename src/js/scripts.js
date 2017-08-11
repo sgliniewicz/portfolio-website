@@ -16,10 +16,10 @@ $(function() {
     var fullHeight = $(".full-height");
 
     function resizeBackground() {
-        FullHeight.height($window.height());
+        fullHeight.height($window.height());
     }
 
-    $window.resize(resizeBackground);
+     $window.resize(resizeBackground);
 
     /*
     $window.scroll(function () {
