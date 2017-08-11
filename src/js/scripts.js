@@ -16,10 +16,10 @@ $(function() {
     var fullHeight = $(".full-height");
 
     function resizeBackground() {
-        fullHeight.height($window.height());
+        fullHeight.height($window.height() + 60);
     }
 
-     $window.resize(resizeBackground);
+    $window.resize(resizeBackground);
 
     /*
     $window.scroll(function () {
@@ -54,8 +54,7 @@ $(function() {
                 scrolling = false;
                 clearInterval( delay );
             }, 600)         
-        }
-        
+        } 
 
         iScrollPos = iCurScrollPos;
         
