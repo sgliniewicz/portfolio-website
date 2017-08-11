@@ -13,7 +13,13 @@ $(function() {
     var openBtn = $('.menu-btn.open')
     var menuItems = $('.menu-item');
     var mediaItems = $('.social-media-item');
-    
+    var fullHeight = $(".full-height");
+
+    function resizeBackground() {
+        FullHeight.height($window.height());
+    }
+
+    $window.resize(resizeBackground);
 
     /*
     $window.scroll(function () {
@@ -148,5 +154,6 @@ $(function() {
     landingPageFlow();
     $('.parallax').parallax();
     $(".button-collapse").sideNav();
+    resizeBackground();
     
 });
