@@ -15,12 +15,13 @@ $(function() {
     var mediaItems = $('.social-media-item');
     var fullHeight = $(".full-height");
 
+    /*
     function resizeBackground() {
         fullHeight.height($window.height());
     }
 
     $window.resize(resizeBackground);
-
+    */
     
     $window.scroll(function () {
         var iCurScrollPos = $(this).scrollTop();
