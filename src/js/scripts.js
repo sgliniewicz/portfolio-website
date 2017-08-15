@@ -16,12 +16,12 @@ $(function() {
     var fullHeight = $(".full-height");
 
     function resizeBackground() {
-        fullHeight.height($window.height() + 60);
+        fullHeight.height($window.height());
     }
 
     $window.resize(resizeBackground);
 
-    /*
+    
     $window.scroll(function () {
         var iCurScrollPos = $(this).scrollTop();
         
@@ -34,7 +34,7 @@ $(function() {
             openBtn.addClass('scale-in');
         }
 
-       
+       /*
         if (scrolling == false){
             scrolling = true;
             if (iCurScrollPos  > iScrollPos) {
@@ -55,11 +55,12 @@ $(function() {
                 clearInterval( delay );
             }, 600)         
         } 
+        */
 
         iScrollPos = iCurScrollPos;
         
     });
-    */
+    
     
 
     menuBtn.click(function(){
@@ -132,17 +133,17 @@ $(function() {
 
 
         setTimeout(function(){
-            openBtn.addClass('scale-in');
+            closeBtn.addClass('scale-in');
         }, 1000)
         //menuopen
-        //setTimeout(openMenuWithDelay, 1000)
+        setTimeout(openMenuWithDelay, 1000)
 
-        /*
+        
         setTimeout(function(){
             nav.removeClass("menu-closed")
             nav.addClass("menu-open") 
         },1100)
-        */
+        
 
         //chevron
         setTimeout( function(){
