@@ -7,6 +7,10 @@
   <title>Steven Gliniewicz</title>
   <meta name="description" content="Steven Gliniewicz">
   <meta name="author" content="Steven Gliniewicz">
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
@@ -17,61 +21,51 @@
 
 <body>
 
-
-  <!-- Fixed Nav Bar -->
-    <ul class="custom-nav menu-closed">
-      <li class="menu">
-        <a href="#!" class="btn-floating btn-large menu-btn close z-depth-3 grey darken-4 scale-transition scale-out">
-          <i class="material-icons">close</i>
-        </a>
-        <a href="#!" class="btn-floating btn-large menu-btn open z-depth-3 grey darken-4 scale-transition scale-out">
-          <i class="material-icons">menu</i>
-        </a>
-      </li>
-      <li>
-        <a href="#!" class="btn-floating btn-large menu-item z-depth-3 grey darken-4 scale-transition scale-out">
-          <i class="material-icons">home</i>
-        </a>
-      </li>
-      <li>
-        <a href="#!" class="btn-floating btn-large menu-item z-depth-3 grey darken-4 scale-transition scale-out" >
-          <i class="material-icons">account_circle</i>
-        </a>
-      </li>
-      <li>
-        <a href="#!" class="btn-floating btn-large menu-item z-depth-3 grey darken-4 scale-transition scale-out">
-          <i class="material-icons">work</i>
-        </a>
-      </li>
-      <li>
-        <a href="#!" class="btn-floating btn-large menu-item z-depth-3 grey darken-4 scale-transition scale-out" >
-          <i class="material-icons">phone</i>
-        </a>
-      </li>
-    </ul> 
-  
-
-  <!-- Header -->
-  <section class="section full-height z-depth-3">
-    <div class="container center-align vertical-align">
-      <div class="row">
-        <h1 id="Title" class="animated down-and-distant">Web Developer/Designer</h1>
-        <h5 id="subTitle" class="animated close-and-heavy">I keep things Simple...</h5>
-        <a href="#!">
-          <img class="social-media-item circle-scale scale-transition scale-out" src="images/icons/github_octocat_social.png">
-        </a>
-        <a href="#!">
-          <img class="social-media-item circle-scale scale-transition scale-out" src="images/icons/linkedin_social.png">
-        </a>
-        <a href="#!">
-          <img class="social-media-item circle-scale scale-transition scale-out" src="images/icons/codepen.png">
-        </a>
+  <nav>
+    <div class="nav-wrapper">
+        <a href="#" data-activates="mobile-demo" class="button-collapse black right" style="margin:0; padding:0 15px;"><i class="material-icons">menu</i></a>
+        <div class="container">
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="">Projects</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
       </div>
-      <img id="scroll-down-icon" class="circle-scale scale-transition scale-out"  src="images/icons/ui_chevron-down.png" style="margin-top:25px;">      
     </div>
-  </section>
+  </nav>
 
+  <!-- Hero Content --> 
+  <div class="section full-height z-depth-3">
+      <div class="container center-align">   
+        <div class="row">
+          <div class="col s12">
+            <img id="me" class="circle animated" width="140" height="140" src="images/steven(4).jpg">
+          </div>
+          <div class="col s12">  
+            <h3 id="title" class="animated down-and-distant">Web Developer &amp; Designer</h3>
+          </div>
+          <div class="col s12">
+            <h5 id="subTitle" class="animated close-and-heavy">I keep things Simple...</h5>
+          </div>
+          <div class="socialcol s12">
+            <a href="#!">
+              <img class="social-media-item circle-scale scale-transition scale-out" src="images/icons/github_octocat_social.png">
+            </a>
+            <a href="#!">
+              <img class="social-media-item circle-scale scale-transition scale-out" src="images/icons/linkedin_social.png">
+            </a>
+            <a href="#!">
+              <img class="social-media-item circle-scale scale-transition scale-out" src="images/icons/codepen.png">
+            </a>
+          </div>
+          <div class="col s12">
+            <img id="scroll-down-icon" class="circle-scale scale-transition scale-out"  src="images/icons/ui_chevron-down.png" style="margin-top:25px;">
+          </div>
+        </div>   
+      </div>   
+  </div>
 
+       <!--
     <div class="parallax-container">
       <div class="parallax"><img src="images/abstract2.jpg"></div>
       <div class="container quote">
@@ -79,127 +73,125 @@
         <h5>- Leornardo da Vinci</h5>
       </div>
     </div>
+  
 
-   
-  <!-- About Me -->
-  <section class="section z-depth-3">
-    <div class="container">
-        <div class="row">
-          <div class="col s12 m12 l6 ">
-            <img class="circle auto-img-resize" src="images/steven(4).jpg">
+    <div class="section z-depth-3">
+      <div class="container">
+          <div class="row">
+            <div class="col s12 m12 l6 ">
+              <img class="circle auto-img-resize" src="images/steven(4).jpg">
+            </div>
+            <div class="col s12 m12 l6 z-depth-3">
+              <h1>About Me</h1>
+              <p class="flow-text">
+              Hi! My name is Steven and I am a 23 year-old Web Developer/Designer based in Chicago, IL. 
+              I started to pick-up on web development my senior year of College and the rest is
+              history. I like to build sites from scratch but I am also accustommed to Wordpress.
+              My goal is to create websites that are simplistic yet stunning utilizing modern frameworks.
+              Please take a look at the below services that I provide.
+              </p>
+            </div>
           </div>
-          <div class="col s12 m12 l6 z-depth-3">
-            <h1>About Me</h1>
+      </div>
+    </div>
+
+
+      <div class="parallax-container">
+        <div class="parallax"><img src="images/abstract2.jpg"></div>
+          <div class="container quote">
+          <h3>"Simplicity is the exact medium between too little and too much"</h3>
+          <h5>- Sir Joshua Reynolds</h5>
+        </div>
+      </div>
+
+
+    <section class="section z-depth-3">
+      <div class="container">
+          <div class="row">
+
+            <div class="col s12 m12 l4">
+              <div class="card">
+                <div class="card-image">
+                  <img src="images/steven(2).jpg">
+                  <span class="card-title sweep-right">Card Title</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col s12 m12 l4">
+              <div class="card">
+                <div class="card-image">
+                  <img src="images/steven(2).jpg">
+                  <span class="card-title sweep-right">Card Title</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col s12 m12 l4">
+              <div class="card">
+                <div class="card-image">
+                  <img src="images/steven(2).jpg">
+                  <span class="card-title sweep-right">Card Title</span>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+
+      <div class="parallax-container">
+        <div class="parallax"><img src="images/abstract2.jpg"></div>
+        <div class="container quote">
+          <h3>"Everything should be made as simple as possible - but not simpler"</h3>
+          <h5>- Albert Einstein</h5>
+        </div>
+      </div>
+
+
+    <section class="section z-depth-3">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m12 l4">
+            <h5>Let's Get In Touch!</h5>
             <p class="flow-text">
-            Hi! My name is Steven and I am a 23 year-old Web Developer/Designer based in Chicago, IL. 
-            I started to pick-up on web development my senior year of College and the rest is
-            history. I like to build sites from scratch but I am also accustommed to Wordpress.
-            My goal is to create websites that are simplistic yet stunning utilizing modern frameworks.
-            Please take a look at the below services that I provide.
+              I am currently seeking new projects to take on. Need a website for your
+              business? Are you an artist seeking an original site to show off your work?
+              Send me an email and lets gets get started on your masterpiece!
             </p>
           </div>
+          <form class="col s12 m12 l8">
+            <div class="row">
+              <div class="input-field col s12 m12 l12">
+                <input id="first_name" type="text" class="validate">
+                <label for="first_name">Name</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12 m12 l6">
+                <input id="subject" type="text" class="validate">
+                <label for="email">Subject</label>
+              </div>
+              <div class="input-field col s12 m12 l6">
+                <input id="email" type="email" class="validate">
+                <label for="email">Email</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12 m12 l12">
+                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                <label for="textarea1">Message</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12 center ">
+                <a class="btn-floating btn-large waves-effect waves-light grey darken-4"><i class="material-icons">send</i></a>
+              </div>
+            </div>
+          </form>
         </div>
-    </div>
-  </section>
-
-
-    <div class="parallax-container">
-      <div class="parallax"><img src="images/abstract2.jpg"></div>
-        <div class="container quote">
-        <h3>"Simplicity is the exact medium between too little and too much"</h3>
-        <h5>- Sir Joshua Reynolds</h5>
       </div>
-    </div>
-
-  <!-- Project Portfolio -->
-  <section class="section z-depth-3">
-    <div class="container">
-        <div class="row">
-
-          <div class="col s12 m12 l4">
-            <div class="card">
-              <div class="card-image">
-                <img src="images/steven(2).jpg">
-                <span class="card-title sweep-right">Card Title</span>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col s12 m12 l4">
-            <div class="card">
-              <div class="card-image">
-                <img src="images/steven(2).jpg">
-                <span class="card-title sweep-right">Card Title</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col s12 m12 l4">
-            <div class="card">
-              <div class="card-image">
-                <img src="images/steven(2).jpg">
-                <span class="card-title sweep-right">Card Title</span>
-              </div>
-            </div>
-          </div>
-      </div>
-    </div>
-  </section>
-
-
-    <div class="parallax-container">
-      <div class="parallax"><img src="images/abstract2.jpg"></div>
-      <div class="container quote">
-        <h3>"Everything should be made as simple as possible - but not simpler"</h3>
-        <h5>- Albert Einstein</h5>
-      </div>
-    </div>
-
-
-   <section class="section z-depth-3">
-    <div class="container">
-      <div class="row">
-        <div class="col s12 m12 l4">
-          <h5>Let's Get In Touch!</h5>
-          <p class="flow-text">
-            I am currently seeking new projects to take on. Need a website for your
-            business? Are you an artist seeking an original site to show off your work?
-            Send me an email and lets gets get started on your masterpiece!
-          </p>
-        </div>
-        <form class="col s12 m12 l8">
-          <div class="row">
-            <div class="input-field col s12 m12 l12">
-              <input id="first_name" type="text" class="validate">
-              <label for="first_name">Name</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12 m12 l6">
-              <input id="subject" type="text" class="validate">
-              <label for="email">Subject</label>
-            </div>
-            <div class="input-field col s12 m12 l6">
-              <input id="email" type="email" class="validate">
-              <label for="email">Email</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12 m12 l12">
-              <textarea id="textarea1" class="materialize-textarea"></textarea>
-              <label for="textarea1">Message</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col s12 center ">
-              <a class="btn-floating btn-large waves-effect waves-light grey darken-4"><i class="material-icons">send</i></a>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-  </section>
-
+    </section>
 
   <footer class="page-footer grey darken-4">
     <div class="container">
@@ -226,8 +218,8 @@
       </div>
     </div>
   </footer>
+  JAVASCRIPT -->
 
-  <!-- JAVASCRIPT -->
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="js/materialize.min.js"></script>
   <script src="js/scripts.js"></script>
