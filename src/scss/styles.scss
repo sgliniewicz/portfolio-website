@@ -30,10 +30,12 @@ nav {
 }
 
 #mobile-nav {
-    margin-top: 60px;
+    margin-right: 60px;
+}
 
-    & li {
-        float: none;
+#octopus-btn {
+    &:hover {
+        transform: scale(1.5);
     }
 }
 
@@ -46,6 +48,13 @@ nav {
     display: none;
 }
 
+.show {
+    display: inline;
+}
+
+.fadeIn {
+    //display:inline;
+}
 
 .parallax-container {
     height: 250px;
@@ -92,10 +101,12 @@ img.circle-scale {
     pointer-events: none;
 }
 
-.auto-img-resize{
+
+.img-resize{
     max-width: 100%;
-    height: auto;
     width: auto;
+    height: auto;
+    
 }
 
 .sweep-right{

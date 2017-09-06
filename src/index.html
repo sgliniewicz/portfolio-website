@@ -24,7 +24,6 @@
     <div class="nav-wrapper"> 
         <a id="mobile-nav-btn" href="#" class="button-collapse black waves-effect waves-light" style="margin:0; text-align:center; position:absolute; right:0; width:56px;"><i class="material-icons">menu</i></a>
         <ul id="mobile-nav" class="right show-on-med-and-down">
-          <!--<li class="nav-item-mobile"><a href="#" data-activates="mobile-demo" class="button-collapse black waves-effect waves-light" style="margin:0; text-align:center; position:absolute; right:0; width:56px;"><i class="material-icons">menu</i></a></li>-->
           <li class="nav-item-mobile scale-transition scale-out"><a href="#home"><i class="material-icons">home</i></a></li>
           <li class="nav-item-mobile scale-transition scale-out"><a href="#portfolio"><i class="material-icons">work</i></a></li>
           <li class="nav-item-mobile scale-transition scale-out"><a href="https://medium.com/@stevenalex"><i class="material-icons">description</i></a></li>
@@ -32,8 +31,8 @@
         </ul>
         <div class="container">
           <div class="row">
-            <div class="left hide-on-med-and-down">
-                <a id="octopus-btn"  href="#home">🐙</a>
+            <div id="octopus-btn" class="left">
+                <a href="#home">🐙</a>
             </div>
             <ul id="nav" class="right hide-on-med-and-down">
               <li class="nav-item"><a href="#home">Home </a></li>
@@ -93,42 +92,45 @@
     <div id="quote1" class="container quote animated">
         <div class="row">
           <div class="col s12">
-            <h4>"Simplicity is the ultimate sophistication"</h4>
-            <h5>- Leornardo da Vinci</h5>
+            <h4 class="close-and-heavy">"Simplicity is the ultimate sophistication"</h4>
+            <h5 class="close-and-heavy">- Leornardo da Vinci</h5>
           </div>
         </div>  
     </div>
   </div>
-  
-  <!--
-  <div class="section z-depth-3">
+
+  <div id ="technologies" class="section scrollspy z-depth-3">
     <div class="container">
-        <div class="row">
-          <div class="col s12 m12 l6 ">
-            <img class="circle auto-img-resize" src="images/steven(4).jpg">
-          </div>
-          <div class="col s12 m12 l6 z-depth-3">
-            <h1>About Me</h1>
-            <p class="flow-text">
-            Hi! My name is Steven and I am a 23 year-old Web Developer/Designer based in Chicago, IL. 
-            I started to pick-up on web development my senior year of College and the rest is
-            history. I like to build sites from scratch but I am also accustommed to Wordpress.
-            My goal is to create websites that are simplistic yet stunning utilizing modern frameworks.
-            Please take a look at the below services that I provide.
-            </p>
-          </div>
+      <div class="row center-align" style="margin-top:20px;">
+        <div class="col s4 m2 l2"> 
+            <img class="img-resize" src="images/html5-icon.png">  
         </div>
+        <div class="col s4 m2 l2"> 
+            <img class="img-resize" src="images/css3-icon.png">  
+        </div>
+        <div class="col s4 m2 l2"> 
+            <img class="img-resize" src="images/js-icon.png">  
+        </div>
+        <div class="col s4 m2 l2"> 
+            <img class="img-resize" src="images/nodejs-icon.png">  
+        </div>
+        <div class="col s4 m2 l2"> 
+            <img class="img-resize" src="images/react-icon.png">  
+        </div>
+        <div class="col s4 m2 l2"> 
+            <img class="img-resize" src="images/angular4-icon.png">  
+        </div>
+      </div>
     </div>
   </div>
 
   <div class="parallax-container">
     <div class="parallax"><img src="images/abstract2.jpg"></div>
       <div class="container quote">
-      <h3>"Simplicity is the exact medium between too little and too much"</h3>
-      <h5>- Sir Joshua Reynolds</h5>
+      <h4 class="close-and-heavy">"Simplicity is the exact medium between too little and too much"</h4>
+      <h5 class="close-and-heavy">- Sir Joshua Reynolds</h5>
     </div>
   </div>
-  -->
 
 
   <div id ="portfolio" class="section scrollspy z-depth-3">
@@ -175,8 +177,8 @@
   <div class="parallax-container">
     <div class="parallax"><img src="images/abstract2.jpg"></div>
     <div id="quote2" class="container quote animated">
-      <h4>"Everything should be made as simple as possible - but not simpler"</h4>
-      <h5>- Albert Einstein</h5>
+      <h4 class="close-and-heavy">"Everything should be made as simple as possible - but not simpler"</h4>
+      <h5 class="close-and-heavy">- Albert Einstein</h5>
     </div>
   </div>
 

@@ -30,10 +30,10 @@ $(function() {
 
     var options = [
         {selector: '#quote1', offset: 200, callback: function() {
-            $("#quote1").addClass('fadeIn');
+            $("#quote1").addClass('show');
           } },
         {selector: '#quote2', offset: 200, callback: function() {
-            $("#quote2").addClass('fadeIn');
+            $("#quote2").addClass('show');
           } },
     ]
 

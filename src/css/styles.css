@@ -20,9 +20,10 @@ nav {
     transition: none; }
 
 #mobile-nav {
-  margin-top: 60px; }
-  #mobile-nav li {
-    float: none; }
+  margin-right: 60px; }
+
+#octopus-btn:hover {
+  transform: scale(1.5); }
 
 .tracking-menu {
   float: right;
@@ -30,6 +31,9 @@ nav {
 
 .hide {
   display: none; }
+
+.show {
+  display: inline; }
 
 .parallax-container {
   height: 250px;
@@ -61,10 +65,10 @@ img.circle-scale {
 .noHover {
   pointer-events: none; }
 
-.auto-img-resize {
+.img-resize {
   max-width: 100%;
-  height: auto;
-  width: auto; }
+  width: auto;
+  height: auto; }
 
 .sweep-right {
   display: inline-block;
