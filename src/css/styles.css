@@ -9,31 +9,26 @@ nav {
   -webkit-box-shadow: none;
   box-shadow: none;
   background: none;
-  position: fixed;
-  top: 0;
+  position: absolute;
   z-index: 9999; }
+  nav ul li a {
+    color: black; }
 
-.row .social-media-item {
-  margin-top: 50px; }
+.nav-item {
+  transition: none; }
+  .nav-item a {
+    transition: none; }
 
-.custom-nav {
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  background: none;
-  position: fixed;
-  z-index: 9999; }
-  .custom-nav li {
-    padding-top: 5px;
-    padding-bottom: 20px;
-    padding-left: 5px; }
-  .custom-nav li.menu .close {
-    position: absolute; }
+.hide {
+  display: none; }
 
 .parallax-container {
   height: 250px;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  text-align: center;
+  flex-direction: column; }
   .parallax-container .quote {
     color: white; }
   .parallax-container .quote h5 {
@@ -47,21 +42,20 @@ img.circle-scale {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("../images/white-background.jpg");
-  padding: 5rem 0; }
+  flex-direction: column;
+  background-image: url("../images/white-background.jpg"); }
   .section .title-box {
-    width: 50%; }
+    width: 100%; }
   .section.full-height {
     height: 100vh; }
+
+.noHover {
+  pointer-events: none; }
 
 .auto-img-resize {
   max-width: 100%;
   height: auto;
   width: auto; }
-
-.social-media {
-  position: fixed;
-  bottom: 0; }
 
 .sweep-right {
   display: inline-block;
