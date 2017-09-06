@@ -19,6 +19,10 @@ nav {
   .nav-item a {
     transition: none; }
 
+.tracking-menu {
+  float: right;
+  position: fixed; }
+
 .hide {
   display: none; }
 

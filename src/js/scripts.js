@@ -29,11 +29,9 @@ $(function() {
 
     var options = [
         {selector: '#quote1', offset: 200, callback: function() {
-            console.log("INJKSDNACJKS");
             $("#quote1").addClass('fadeIn');
           } },
         {selector: '#quote2', offset: 200, callback: function() {
-            console.log("INJKSDN");
             $("#quote2").addClass('fadeIn');
           } },
     ]

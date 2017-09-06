@@ -29,9 +29,15 @@ nav {
     }
 }
 
+.tracking-menu {
+    float: right;
+    position: fixed;
+}
+
 .hide {
     display: none;
 }
+
 
 .parallax-container {
     height: 250px;
