@@ -9,9 +9,18 @@ nav {
   -webkit-box-shadow: none;
   box-shadow: none;
   background: none;
-  position: absolute; }
+  position: absolute;
+  z-index: 9999; }
   nav ul li a {
     color: black; }
+
+.nav-item {
+  transition: none; }
+  .nav-item a {
+    transition: none; }
+
+.hide {
+  display: none; }
 
 .parallax-container {
   height: 250px;
@@ -40,8 +49,8 @@ img.circle-scale {
   .section.full-height {
     height: 100vh; }
 
-.hero-content .social-icons {
-  margin: 25px 0; }
+.noHover {
+  pointer-events: none; }
 
 .auto-img-resize {
   max-width: 100%;

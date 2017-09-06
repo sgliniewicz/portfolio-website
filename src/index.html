@@ -22,20 +22,26 @@
 <body>
 
   <nav>
-    <div class="nav-wrapper">
-        <a href="#" data-activates="mobile-demo" class="button-collapse black right" style="margin:0; padding:0 15px;"><i class="material-icons">menu</i></a>
+    <div class="nav-wrapper"> 
+        <a href="#" data-activates="mobile-demo" class="button-collapse black" style="margin:0; text-align:center; position:fixed; right:0; width:56px;"><i class="material-icons">menu</i></a>
         <div class="container">
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="">Projects</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Contact</a></li>
-          </ul>
+          <div class="row">
+            <div class="left">
+                <a id="octopus-btn" href="#home">🐙</a>
+            </div>
+            <ul id="nav" class="right hide-on-med-and-down">
+              <li class="nav-item"><a href="#home">Home </a></li>
+              <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
+              <li class="nav-item"><a href="https://medium.com/@stevenalex">Blog</a></li>
+              <li class="nav-item"><a href="#contact">Contact</a></li>
+            </ul>
+          </div class="row">
       </div>
     </div>
   </nav>
 
   <!-- Hero Content --> 
-  <div class="section full-height z-depth-3">
+  <div id="home" class="section scrollspy full-height z-depth-3">
       <div class="container center-align">   
         <div class="row">
           <div class="col s12">
@@ -47,7 +53,7 @@
           <div class="col s12">
             <h5 id="subTitle" class="animated close-and-heavy">I keep things Simple...</h5>
           </div>
-          <div class="socialcol s12">
+          <div class="social col s12" style="margin-top:25px;">
             <a href="#!">
               <img class="social-media-item circle-scale scale-transition scale-out" src="images/icons/github_octocat_social.png">
             </a>
@@ -65,16 +71,20 @@
       </div>   
   </div>
 
-       <!--
+       
     <div class="parallax-container">
       <div class="parallax"><img src="images/abstract2.jpg"></div>
-      <div class="container quote">
-        <h3>"Simplicity is the ultimate sophistication"</h3>
-        <h5>- Leornardo da Vinci</h5>
+      <div id="quote1" class="container quote animated">
+          <div class="row">
+            <div class="col s12">
+              <h3>"Simplicity is the ultimate sophistication"</h3>
+              <h5>- Leornardo da Vinci</h5>
+            </div class="col s12">
+          </div>  
       </div>
     </div>
-  
-
+    
+    <!--
     <div class="section z-depth-3">
       <div class="container">
           <div class="row">
@@ -95,25 +105,27 @@
       </div>
     </div>
 
-
-      <div class="parallax-container">
-        <div class="parallax"><img src="images/abstract2.jpg"></div>
-          <div class="container quote">
-          <h3>"Simplicity is the exact medium between too little and too much"</h3>
-          <h5>- Sir Joshua Reynolds</h5>
-        </div>
+    <div class="parallax-container">
+      <div class="parallax"><img src="images/abstract2.jpg"></div>
+        <div class="container quote">
+        <h3>"Simplicity is the exact medium between too little and too much"</h3>
+        <h5>- Sir Joshua Reynolds</h5>
       </div>
+    </div>
+  -->
 
 
-    <section class="section z-depth-3">
+    <div id ="portfolio" class="section scrollspy z-depth-3">
       <div class="container">
+          <h3>Portfolio</h3>
           <div class="row">
-
             <div class="col s12 m12 l4">
               <div class="card">
                 <div class="card-image">
-                  <img src="images/steven(2).jpg">
-                  <span class="card-title sweep-right">Card Title</span>
+                    <a href="https://sgliniewicz.wixsite.com/portfolio"> 
+                      <img src="images/wix-portfolio.png">
+                      <span class="card-title sweep-right">Wix Portfolio</span>
+                    </a>
                 </div>
               </div>
             </div>
@@ -121,8 +133,10 @@
             <div class="col s12 m12 l4">
               <div class="card">
                 <div class="card-image">
-                  <img src="images/steven(2).jpg">
-                  <span class="card-title sweep-right">Card Title</span>
+                  <a href=""> 
+                    <img src="images/wix-portfolio.png">
+                    <span class="card-title sweep-right">Coming Soon...</span>
+                  </a>
                 </div>
               </div>
             </div>
@@ -130,26 +144,28 @@
             <div class="col s12 m12 l4">
               <div class="card">
                 <div class="card-image">
-                  <img src="images/steven(2).jpg">
-                  <span class="card-title sweep-right">Card Title</span>
+                    <a href=""> 
+                        <img src="images/wix-portfolio.png">
+                        <span class="card-title sweep-right">Coming Soon...</span>
+                      </a>
                 </div>
               </div>
             </div>
         </div>
       </div>
-    </section>
+    </div>
 
 
       <div class="parallax-container">
         <div class="parallax"><img src="images/abstract2.jpg"></div>
-        <div class="container quote">
+        <div id="quote2" class="container quote animated">
           <h3>"Everything should be made as simple as possible - but not simpler"</h3>
           <h5>- Albert Einstein</h5>
         </div>
       </div>
 
 
-    <section class="section z-depth-3">
+    <div id="contact" class="section scrollspy z-depth-3">
       <div class="container">
         <div class="row">
           <div class="col s12 m12 l4">
@@ -191,35 +207,32 @@
           </form>
         </div>
       </div>
-    </section>
+    </div>
 
   <footer class="page-footer grey darken-4">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="white-text">Footer Content</h5>
-          <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+            © 2017 Copyright Steven Gliniewicz
         </div>
         <div class="col l4 offset-l2 s12">
-          <h5 class="white-text">Links</h5>
           <ul>
-            <li><a class="grey-text text-lighten-3" href="#!">Home</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">About</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Portfolio</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Contact</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Github</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Codepen</a></li>
           </ul>
         </div>
       </div>
     </div>
     <div class="footer-copyright">
-      <div class="container">
-      © 2017 Copyright Text
-      <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        <div class="container">
+          © 2017 Copyright Steven Gliniewicz
+        </div>
       </div>
-    </div>
   </footer>
-  JAVASCRIPT -->
 
+
+  <!--JAVASCRIPT -->
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="js/materialize.min.js"></script>
   <script src="js/scripts.js"></script>

@@ -16,15 +16,31 @@ $(function() {
         $('#title').addClass('fadeInDown')
         $('#subTitle').addClass('fadeInDown')
         $('#me').addClass('fadeInDown')
-    
+        
+        setTimeout( function(){
+            $('.social-media-item').addClass('scale-in')
+        }, 500)
 
         //chevron
         setTimeout( function(){
             $('#scroll-down-icon').addClass('scale-in')
-        }, 2500)
+        }, 1000)
     }
+
+    var options = [
+        {selector: '#quote1', offset: 200, callback: function() {
+            console.log("INJKSDNACJKS");
+            $("#quote1").addClass('fadeIn');
+          } },
+        {selector: '#quote2', offset: 200, callback: function() {
+            console.log("INJKSDN");
+            $("#quote2").addClass('fadeIn');
+          } },
+    ]
 
     landingPageFlow();
     $('.parallax').parallax();
+    $('.scrollspy').scrollSpy();
+    Materialize.scrollFire(options);
     
 });

@@ -13,11 +13,24 @@ nav {
     box-shadow: none;
     background: none;
     position: absolute;
+    z-index: 9999;
 
     & ul li a {
         color: black;
     }
 
+}
+
+.nav-item {
+    transition: none;
+
+    & a {
+        transition: none;
+    }
+}
+
+.hide {
+    display: none;
 }
 
 .parallax-container {
@@ -27,6 +40,8 @@ nav {
     justify-content: center;
     text-align: center;
     flex-direction: column;
+
+
     
     & .quote {
         color: white;
@@ -59,12 +74,8 @@ img.circle-scale {
     }
 }
 
-.hero-content {
-
-    & .social-icons{
-        margin: 25px 0
-    }
-
+.noHover{
+    pointer-events: none;
 }
 
 .auto-img-resize{
