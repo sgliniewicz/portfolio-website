@@ -19,6 +19,11 @@ nav {
   .nav-item a {
     transition: none; }
 
+#mobile-nav {
+  margin-top: 60px; }
+  #mobile-nav li {
+    float: none; }
+
 .tracking-menu {
   float: right;
   position: fixed; }

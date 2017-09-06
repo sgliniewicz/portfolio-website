@@ -29,6 +29,14 @@ nav {
     }
 }
 
+#mobile-nav {
+    margin-top: 60px;
+
+    & li {
+        float: none;
+    }
+}
+
 .tracking-menu {
     float: right;
     position: fixed;
