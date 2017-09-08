@@ -52,10 +52,6 @@ nav {
     display: inline;
 }
 
-.fadeIn {
-    //display:inline;
-}
-
 .parallax-container {
     height: 250px;
     display: flex;
@@ -109,6 +105,10 @@ img.circle-scale {
     
 }
 
+.card {
+    cursor:pointer;
+}
+
 .sweep-right{
   display:inline-block;
   position:relative;
@@ -116,10 +116,6 @@ img.circle-scale {
   cursor:pointer;
   background:none;
   z-index:0;
-}
-
-.card {
-    cursor:pointer;
 }
 
 .sweep-right:before {
